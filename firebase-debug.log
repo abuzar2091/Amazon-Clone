@@ -1,0 +1,189 @@
+[debug] [2023-07-30T05:02:21.557Z] ----------------------------------------------------------------------
+[debug] [2023-07-30T05:02:21.559Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\abuza\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-07-30T05:02:21.559Z] CLI Version:   12.4.6
+[debug] [2023-07-30T05:02:21.560Z] Platform:      win32
+[debug] [2023-07-30T05:02:21.560Z] Node Version:  v18.14.0
+[debug] [2023-07-30T05:02:21.566Z] Time:          Sun Jul 30 2023 10:32:21 GMT+0530 (India Standard Time)
+[debug] [2023-07-30T05:02:21.566Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-30T05:02:21.776Z] Field ".functions" in "firebase.json" is possibly invalid: should be object
+[debug] [2023-07-30T05:02:21.777Z] Object ".functions[0]" in "firebase.json" has unknown property: {"additionalProperty":"redeploy"}
+[debug] [2023-07-30T05:02:21.777Z] Field ".functions" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2023-07-30T05:02:21.785Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-30T05:02:21.785Z] > authorizing via signed-in user (abuzar0561446@gmail.com)
+[debug] [2023-07-30T05:02:21.786Z] [iam] checking project challenge-f8d38 for permissions ["firebase.projects.get"]
+[debug] [2023-07-30T05:02:21.788Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-f8d38:testIamPermissions [none]
+[debug] [2023-07-30T05:02:21.788Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-f8d38:testIamPermissions x-goog-quota-user=projects/challenge-f8d38
+[debug] [2023-07-30T05:02:21.788Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-f8d38:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-30T05:02:23.851Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-f8d38:testIamPermissions 200
+[debug] [2023-07-30T05:02:23.852Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-f8d38:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-30T05:02:23.854Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38 [none]
+[debug] [2023-07-30T05:02:24.726Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38 200
+[debug] [2023-07-30T05:02:24.727Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38 {"projectId":"challenge-f8d38","projectNumber":"750016218273","displayName":"amazon-challenge","name":"projects/challenge-f8d38","resources":{"hostingSite":"challenge-f8d38","realtimeDatabaseInstance":"challenge-f8d38-default-rtdb"},"state":"ACTIVE","etag":"1_5c8814dd-d279-4595-b67c-9f73703dd78e"}
+[info] 
+[info] === Serving from 'C:\Users\abuza\OneDrive\Desktop\AmazonClone\amazon-clone'...
+[info] 
+[debug] [2023-07-30T05:02:24.742Z] defaultcredentials: writing to file C:\Users\abuza\AppData\Roaming\firebase\abuzar0561446_gmail_com_application_default_credentials.json
+[debug] [2023-07-30T05:02:24.743Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/challenge-f8d38/sites 
+[debug] [2023-07-30T05:02:24.746Z] Setting GAC to C:\Users\abuza\AppData\Roaming\firebase\abuzar0561446_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\abuza\\AppData\\Roaming\\firebase\\abuzar0561446_gmail_com_application_default_credentials.json"}}
+[debug] [2023-07-30T05:02:24.747Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38/adminSdkConfig [none]
+[debug] [2023-07-30T05:02:25.430Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38/adminSdkConfig 200
+[debug] [2023-07-30T05:02:25.430Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38/adminSdkConfig {"projectId":"challenge-f8d38","databaseURL":"https://challenge-f8d38-default-rtdb.firebaseio.com","storageBucket":"challenge-f8d38.appspot.com"}
+[debug] [2023-07-30T05:02:26.225Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/challenge-f8d38/sites 200
+[debug] [2023-07-30T05:02:26.225Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/challenge-f8d38/sites {"sites":[{"name":"projects/challenge-f8d38/sites/challenge-f8d38","defaultUrl":"https://challenge-f8d38.web.app","appId":"1:750016218273:web:bff24c9b4e7164586c9ce0","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-30T05:02:26.226Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38/webApps/1:750016218273:web:bff24c9b4e7164586c9ce0/config [none]
+[debug] [2023-07-30T05:02:27.760Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38/webApps/1:750016218273:web:bff24c9b4e7164586c9ce0/config 200
+[debug] [2023-07-30T05:02:27.760Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38/webApps/1:750016218273:web:bff24c9b4e7164586c9ce0/config {"projectId":"challenge-f8d38","appId":"1:750016218273:web:bff24c9b4e7164586c9ce0","databaseURL":"https://challenge-f8d38-default-rtdb.firebaseio.com","storageBucket":"challenge-f8d38.appspot.com","apiKey":"AIzaSyCUUFfnJm7mEQXEIsOhEVlDkWbFU0Fd0c8","authDomain":"challenge-f8d38.firebaseapp.com","messagingSenderId":"750016218273","measurementId":"G-53SKJ1V38Q"}
+[debug] [2023-07-30T05:02:27.811Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38 [none]
+[debug] [2023-07-30T05:02:28.911Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38 200
+[debug] [2023-07-30T05:02:28.911Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38 {"projectId":"challenge-f8d38","projectNumber":"750016218273","displayName":"amazon-challenge","name":"projects/challenge-f8d38","resources":{"hostingSite":"challenge-f8d38","realtimeDatabaseInstance":"challenge-f8d38-default-rtdb"},"state":"ACTIVE","etag":"1_5c8814dd-d279-4595-b67c-9f73703dd78e"}
+[info] i  functions: Watching "C:\Users\abuza\OneDrive\Desktop\AmazonClone\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\abuza\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\" for Cloud Functions..."}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: could not deploy functions because the "functions" directory was not found. Please create it or specify a different source directory in firebase.json {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: could not deploy functions because the \u001b[1m\"functions\"\u001b[22m directory was not found. Please create it or specify a different source directory in firebase.json"}}
+[info] i  hosting[challenge-f8d38]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[challenge-f8d38]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2023-07-30T05:04:35.725Z] ----------------------------------------------------------------------
+[debug] [2023-07-30T05:04:35.727Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\abuza\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-07-30T05:04:35.728Z] CLI Version:   12.4.6
+[debug] [2023-07-30T05:04:35.730Z] Platform:      win32
+[debug] [2023-07-30T05:04:35.730Z] Node Version:  v18.14.0
+[debug] [2023-07-30T05:04:35.733Z] Time:          Sun Jul 30 2023 10:34:35 GMT+0530 (India Standard Time)
+[debug] [2023-07-30T05:04:35.733Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-30T05:04:35.954Z] Field ".functions" in "firebase.json" is possibly invalid: should be object
+[debug] [2023-07-30T05:04:35.955Z] Object ".functions[0]" in "firebase.json" has unknown property: {"additionalProperty":"redeploy"}
+[debug] [2023-07-30T05:04:35.955Z] Field ".functions" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2023-07-30T05:04:35.962Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-30T05:04:35.963Z] > authorizing via signed-in user (abuzar0561446@gmail.com)
+[debug] [2023-07-30T05:04:35.963Z] [iam] checking project challenge-f8d38 for permissions ["firebase.projects.get"]
+[debug] [2023-07-30T05:04:35.966Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-f8d38:testIamPermissions [none]
+[debug] [2023-07-30T05:04:35.966Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-f8d38:testIamPermissions x-goog-quota-user=projects/challenge-f8d38
+[debug] [2023-07-30T05:04:35.966Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-f8d38:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-30T05:04:37.609Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-f8d38:testIamPermissions 200
+[debug] [2023-07-30T05:04:37.609Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-f8d38:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-30T05:04:37.612Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38 [none]
+[debug] [2023-07-30T05:04:38.315Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38 200
+[debug] [2023-07-30T05:04:38.315Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38 {"projectId":"challenge-f8d38","projectNumber":"750016218273","displayName":"amazon-challenge","name":"projects/challenge-f8d38","resources":{"hostingSite":"challenge-f8d38","realtimeDatabaseInstance":"challenge-f8d38-default-rtdb"},"state":"ACTIVE","etag":"1_5c8814dd-d279-4595-b67c-9f73703dd78e"}
+[info] 
+[info] === Serving from 'C:\Users\abuza\OneDrive\Desktop\AmazonClone\amazon-clone'...
+[info] 
+[debug] [2023-07-30T05:04:38.323Z] defaultcredentials: writing to file C:\Users\abuza\AppData\Roaming\firebase\abuzar0561446_gmail_com_application_default_credentials.json
+[debug] [2023-07-30T05:04:38.324Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/challenge-f8d38/sites 
+[debug] [2023-07-30T05:04:38.327Z] Setting GAC to C:\Users\abuza\AppData\Roaming\firebase\abuzar0561446_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\abuza\\AppData\\Roaming\\firebase\\abuzar0561446_gmail_com_application_default_credentials.json"}}
+[debug] [2023-07-30T05:04:38.328Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38/adminSdkConfig [none]
+[debug] [2023-07-30T05:04:39.208Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38/adminSdkConfig 200
+[debug] [2023-07-30T05:04:39.208Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38/adminSdkConfig {"projectId":"challenge-f8d38","databaseURL":"https://challenge-f8d38-default-rtdb.firebaseio.com","storageBucket":"challenge-f8d38.appspot.com"}
+[debug] [2023-07-30T05:04:39.273Z] Error: listen EADDRINUSE: address already in use ::1:5001
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (node:net:1937:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:8)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-07-30T06:02:15.089Z] ----------------------------------------------------------------------
+[debug] [2023-07-30T06:02:15.091Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\abuza\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js open
+[debug] [2023-07-30T06:02:15.092Z] CLI Version:   12.4.6
+[debug] [2023-07-30T06:02:15.092Z] Platform:      win32
+[debug] [2023-07-30T06:02:15.092Z] Node Version:  v18.14.0
+[debug] [2023-07-30T06:02:15.108Z] Time:          Sun Jul 30 2023 11:32:15 GMT+0530 (India Standard Time)
+[debug] [2023-07-30T06:02:15.108Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-30T06:02:15.162Z] Field ".functions" in "firebase.json" is possibly invalid: should be object
+[debug] [2023-07-30T06:02:15.176Z] Object ".functions[0]" in "firebase.json" has unknown property: {"additionalProperty":"redeploy"}
+[debug] [2023-07-30T06:02:15.176Z] Field ".functions" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2023-07-30T06:02:15.182Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-30T06:02:15.182Z] > authorizing via signed-in user (abuzar0561446@gmail.com)
+[debug] [2023-07-30T06:02:15.182Z] [iam] checking project challenge-f8d38 for permissions ["firebase.projects.get"]
+[debug] [2023-07-30T06:02:15.186Z] > refreshing access token with scopes: []
+[debug] [2023-07-30T06:02:15.187Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-07-30T06:02:15.187Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-30T06:02:36.356Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":211,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------798694236325993260399491","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: connect ETIMEDOUT 2404:6800:4009:823::200a:443
+[debug] [2023-07-30T06:02:36.356Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-07-30T06:02:36.356Z] > refreshing access token with scopes: []
+[debug] [2023-07-30T06:02:36.357Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-07-30T06:02:36.357Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-30T06:02:57.401Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":211,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------060084920792567754783317","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: connect ETIMEDOUT 2404:6800:4009:823::200a:443
+[debug] [2023-07-30T06:02:57.402Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-07-30T06:03:02.424Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\abuza\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:254:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-07-30T06:03:20.857Z] ----------------------------------------------------------------------
+[debug] [2023-07-30T06:03:20.859Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\abuza\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-07-30T06:03:20.859Z] CLI Version:   12.4.6
+[debug] [2023-07-30T06:03:20.859Z] Platform:      win32
+[debug] [2023-07-30T06:03:20.860Z] Node Version:  v18.14.0
+[debug] [2023-07-30T06:03:20.863Z] Time:          Sun Jul 30 2023 11:33:20 GMT+0530 (India Standard Time)
+[debug] [2023-07-30T06:03:20.863Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-30T06:03:20.928Z] Field ".functions" in "firebase.json" is possibly invalid: should be object
+[debug] [2023-07-30T06:03:20.929Z] Object ".functions[0]" in "firebase.json" has unknown property: {"additionalProperty":"redeploy"}
+[debug] [2023-07-30T06:03:20.929Z] Field ".functions" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2023-07-30T06:03:20.934Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-30T06:03:20.935Z] > authorizing via signed-in user (abuzar0561446@gmail.com)
+[debug] [2023-07-30T06:03:20.935Z] [iam] checking project challenge-f8d38 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2023-07-30T06:03:20.949Z] > refreshing access token with scopes: []
+[debug] [2023-07-30T06:03:20.951Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-07-30T06:03:20.951Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-30T06:03:42.068Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":211,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------829502221247270830620849","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: connect ETIMEDOUT 2404:6800:4009:80a::200a:443
+[debug] [2023-07-30T06:03:42.070Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-07-30T06:03:42.071Z] > refreshing access token with scopes: []
+[debug] [2023-07-30T06:03:42.072Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-07-30T06:03:42.072Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-30T06:04:03.113Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":211,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------937796350460351011284192","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: connect ETIMEDOUT 2404:6800:4009:80a::200a:443
+[debug] [2023-07-30T06:04:03.114Z] [functions] service account IAM check errored, deploy may fail: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci {"name":"FirebaseError","children":[],"exit":1,"message":"Authentication Error: Your credentials are no longer valid. Please run \u001b[1mfirebase login --reauth\u001b[22m\n\nFor CI servers and headless environments, generate a new token with \u001b[1mfirebase login:ci\u001b[22m","status":500}
+[debug] [2023-07-30T06:04:03.116Z] > refreshing access token with scopes: []
+[debug] [2023-07-30T06:04:03.117Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-07-30T06:04:03.117Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-30T06:04:24.173Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":211,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------313602176344188957730834","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: connect ETIMEDOUT 2404:6800:4009:80a::200a:443
+[debug] [2023-07-30T06:04:24.173Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-07-30T06:04:29.196Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\abuza\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:254:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-07-30T16:53:20.909Z] ----------------------------------------------------------------------
+[debug] [2023-07-30T16:53:20.914Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\abuza\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js open
+[debug] [2023-07-30T16:53:20.915Z] CLI Version:   12.4.6
+[debug] [2023-07-30T16:53:20.916Z] Platform:      win32
+[debug] [2023-07-30T16:53:20.916Z] Node Version:  v18.14.0
+[debug] [2023-07-30T16:53:20.931Z] Time:          Sun Jul 30 2023 22:23:20 GMT+0530 (India Standard Time)
+[debug] [2023-07-30T16:53:20.931Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-30T16:53:20.940Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-07-30T16:53:21.193Z] Field ".functions" in "firebase.json" is possibly invalid: should be object
+[debug] [2023-07-30T16:53:21.195Z] Object ".functions[0]" in "firebase.json" has unknown property: {"additionalProperty":"redeploy"}
+[debug] [2023-07-30T16:53:21.196Z] Field ".functions" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2023-07-30T16:53:21.210Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-30T16:53:21.212Z] > authorizing via signed-in user (abuzar0561446@gmail.com)
+[debug] [2023-07-30T16:53:21.212Z] [iam] checking project challenge-f8d38 for permissions ["firebase.projects.get"]
+[debug] [2023-07-30T16:53:21.214Z] > refreshing access token with scopes: []
+[debug] [2023-07-30T16:53:21.216Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-07-30T16:53:21.216Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-30T16:53:22.582Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-07-30T16:53:22.582Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-30T16:53:22.596Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-f8d38:testIamPermissions [none]
+[debug] [2023-07-30T16:53:22.596Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-f8d38:testIamPermissions x-goog-quota-user=projects/challenge-f8d38
+[debug] [2023-07-30T16:53:22.596Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-f8d38:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-30T16:53:22.675Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-07-30T16:53:22.675Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-07-30T16:53:25.664Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-f8d38:testIamPermissions 200
+[debug] [2023-07-30T16:53:25.664Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-f8d38:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-30T16:53:25.666Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38 [none]
+[debug] [2023-07-30T16:53:27.253Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38 200
+[debug] [2023-07-30T16:53:27.254Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38 {"projectId":"challenge-f8d38","projectNumber":"750016218273","displayName":"amazon-challenge","name":"projects/challenge-f8d38","resources":{"hostingSite":"challenge-f8d38","realtimeDatabaseInstance":"challenge-f8d38-default-rtdb"},"state":"ACTIVE","etag":"1_5c8814dd-d279-4595-b67c-9f73703dd78e"}
+[debug] [2023-07-30T16:53:27.255Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38 [none]
+[debug] [2023-07-30T16:53:27.919Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38 200
+[debug] [2023-07-30T16:53:27.919Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-f8d38 {"projectId":"challenge-f8d38","projectNumber":"750016218273","displayName":"amazon-challenge","name":"projects/challenge-f8d38","resources":{"hostingSite":"challenge-f8d38","realtimeDatabaseInstance":"challenge-f8d38-default-rtdb"},"state":"ACTIVE","etag":"1_5c8814dd-d279-4595-b67c-9f73703dd78e"}
